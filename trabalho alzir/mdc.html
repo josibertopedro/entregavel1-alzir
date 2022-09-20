@@ -1,0 +1,19 @@
+<script>
+    var num1 = parseInt(prompt("digite um numero"));
+    var num2 = parseInt(prompt("digite outro numero"));
+    var aux=0
+    if(num1>num2){
+        aux = num1
+        num1 =num2
+        num2 = aux
+    }
+	
+		do {
+			resto = num1%num2
+            num1 = num2
+            num2 = resto
+			
+		}
+        while(resto!=0)
+        console.log("MDC = " + num1);
+ </script>
